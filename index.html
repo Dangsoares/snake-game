@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Jogo da Cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Jogo da Cobrinha</h1>
+        <div class="game-info">
+            <div class="score">Pontos: <span id="score">0</span></div>
+            <div class="high-score">Recorde: <span id="highScore">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Iniciar Jogo</button>
+            <button id="pauseBtn" class="btn btn-secondary" disabled>Pausar</button>
+            <button id="resetBtn" class="btn btn-danger">Reiniciar</button>
+        </div>
+        <div class="instructions">
+            <h3>Instruções:</h3>
+            <ul>
+                <li>Use as <strong>Setas do Teclado</strong> ou <strong>WASD</strong> para mover a cobrinha</li>
+                <li>Coma a comida vermelha 🍎 para crescer e ganhar pontos</li>
+                <li>Não bata nas paredes ou em você mesmo</li>
+                <li>Cada comida vale 10 pontos</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
